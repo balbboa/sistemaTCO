@@ -9,7 +9,7 @@ export default function login() {
   return (
     <>
       <div
-        className="bg-purple-900 absolute top-0 left-0 bg-gradient-to-b from-gray-900 via-gray-900 to-purple-800 bottom-0 leading-5 h-full w-full overflow-hidden">
+        className="bg-blue-900 absolute top-0 left-0 bg-gradient-to-b from-gray-900 via-gray-900 to-blue-800 bottom-0 leading-5 h-full w-full overflow-hidden">
       </div>
       <div
         className="relative min-h-screen  sm:flex sm:flex-row  justify-center bg-transparent rounded-3xl shadow-xl">
@@ -37,14 +37,14 @@ export default function login() {
               </div>
               <div className="flex items-center justify-between">
                 <div className="text-sm ml-auto">
-                  <a href="http://www2.agendamento.pm.rn.gov.br/reset-senha/index.php?action=sendtoken" className="text-purple-700 hover:text-purple-600">
+                  <a href="http://www2.agendamento.pm.rn.gov.br/reset-senha/index.php?action=sendtoken" className="text-blue-700 hover:text-blue-600">
                     Esqueceu a senha?
                   </a>
                 </div>
               </div>
               <div>
                 <Link to={`/inicio`}>
-                  <button type="submit" className="w-full flex justify-center bg-indigo-800  hover:bg-indigo-600 text-gray-100 p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500">
+                  <button type="submit" className="w-full flex justify-center bg-blue-800  hover:bg-blue-600 text-gray-100 p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500">
                     Entrar
                   </button>
                 </Link>

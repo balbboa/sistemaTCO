@@ -5,6 +5,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import Menu from './components/menu';
+import Adicionar from './pages/adicionar';
 import ErrorPage from './pages/error';
 import Inicio from './pages/inicio';
 import Login from './pages/login';
@@ -27,6 +28,18 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/adicionar",
+    element: <Menu />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/adicionar",
+        element: <Adicionar />,
+      },
+    ],
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
